@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання з числами</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo" onmouseover="showAuthorInfo()" onmouseout="hideAuthorInfo()">Лого</div>
+        <ul class="nav-links">
+            <li><a href="#sum">Суми прописом</a></li>
+            
+        </ul>
+    </nav>
+
+    
+    <div id="sum" class="task-block">
+        <h2>Завдання 1: найдовше слово в рядку</h2>
+        <label for="number1">Введіть текст:</label>
+        <input type="text" id="number1" oninput="convertAndDisplay()">
+        <p id="result1" class="result"></p>
+    </div>
+
+    
+    <div id="author-info" class="author-info">
+        <img src="supermen.jpg" alt="Фото автора">
+        <p>Завалецький Владислав</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

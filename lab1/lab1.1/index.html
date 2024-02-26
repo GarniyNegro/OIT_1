@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання з числами</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="logo" onmouseover="showAuthorInfo()" onmouseout="hideAuthorInfo()">Лого</div>
+        <ul class="nav-links">
+            <li><a href="#sum">Сума цифр числа</a></li>
+            <li><a href="#product">Добуток цифр числа</a></li>
+           
+        </ul>
+    </nav>
+
+    
+    <div id="sum" class="task-block">
+        <h2>Завдання 1: Знайти суму цифр числа</h2>
+        <label for="number1">Введіть число:</label>
+        <input type="number" id="number1" onchange="calculateSum()">
+        <p id="sum-result">Сума цифр: </p>
+    </div>
+
+    <div id="product" class="task-block">
+        <h2>Завдання 2: Знайти добуток цифр числа</h2>
+        <label for="number2">Введіть число:</label>
+        <input type="number" id="number2" onchange="calculateProduct()">
+        <p id="product-result">Добуток цифр: </p>
+    </div>
+
+   
+
+    
+    <div id="author-info" class="author-info">
+        <img src="supermen.jpg" alt="Фото автора">
+        <p>Владислав Завалецький</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
